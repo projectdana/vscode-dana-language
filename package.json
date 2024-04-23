@@ -1,0 +1,31 @@
+{
+    "name": "vscode-dana-language",
+    "displayName": "vscode-dana-language",
+    "description": "Dana Language Definitions for Visual Studio Code",
+    "publisher": "projectdana.com",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/projectdana/vscode-dana-language"
+      },
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dana",
+            "aliases": ["Dana", "dana"],
+            "extensions": [".dn"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dana",
+            "scopeName": "source.dn",
+            "path": "./syntaxes/dana.tmLanguage.json"
+        }]
+    }
+}
